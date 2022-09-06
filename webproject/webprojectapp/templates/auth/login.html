@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/auth/login.css'%}">
+</head>
+<body>
+    <div class="login-box">
+        <img class="avatar" src="http://pm1.narvii.com/6393/b82a52e5cb21687ed5a1778e1e2eae53f0dc8c4c_00.jpg" alt="papaleta-logo">
+        <h1>Login Here</h1>
+        <form action="/login/" method="post">
+            {% csrf_token %}
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Enter username">
+
+            <label for="password">Password</label>
+            <input type="text" name="password" placeholder="Enter Password">
+            <div id="form_messages">
+                {% if messages %}
+                    <ul>
+                        {% for message in messages %}
+                            <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+
+            </div>
+            <input type="submit" value="Log In">
+        </form>
+    </div>
+</body>
+</html>
