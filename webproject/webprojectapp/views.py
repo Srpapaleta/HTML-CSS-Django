@@ -24,7 +24,7 @@ def login_user(request):
             login(request, user)
             return redirect('homepage')
         else:
-            messages.error(request, "Credenciales incorrectas")
+            messages.error(request, "Usuario o contraseña incorrectos")
     
     return render(request, "auth/login.html")
 

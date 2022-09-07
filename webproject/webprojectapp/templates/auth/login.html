@@ -10,15 +10,14 @@
 </head>
 <body>
     <div class="login-box">
-        <img class="avatar" src="http://pm1.narvii.com/6393/b82a52e5cb21687ed5a1778e1e2eae53f0dc8c4c_00.jpg" alt="papaleta-logo">
-        <h1>Login Here</h1>
+        <h1>Inicio Sesión</h1>
         <form action="/login/" method="post">
             {% csrf_token %}
-            <label for="username">Username</label>
-            <input type="text" name="username" placeholder="Enter username">
+            <label for="username">Usuario</label>
+            <input type="text" name="username">
 
-            <label for="password">Password</label>
-            <input type="text" name="password" placeholder="Enter Password">
+            <label for="password">Contraseña</label>
+            <input type="text" name="password">
             <div id="form_messages">
                 {% if messages %}
                     <ul>
@@ -29,7 +28,7 @@
                 {% endif %}
 
             </div>
-            <input type="submit" value="Log In">
+            <input type="submit" value="Entrar">
         </form>
     </div>
 </body>
