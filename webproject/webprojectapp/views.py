@@ -32,3 +32,7 @@ def login_user(request):
 def logut_user(request):
     logout(request)
     return redirect('login')
+
+@login_required(login_url="login")
+def apr_register(request):
+    return render(request, "apt-register.html")

@@ -71,85 +71,62 @@ main{
 }
 
 .main-section{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 40% 20%;
     background-color: rgb(226, 221, 221);
-    width: 100%;
-    height: 100%;
+    border-radius: 10px;
+    align-content: center;
+    justify-items: center;
+}
+
+.user-details{
+    width: 70%;
     display: grid;
-    grid-template-rows: 25% 75%;
+    grid-template-columns: 50% 50%;
 }
 
-.sections{
-    width: 100%;
-    height: 100%;
+h2{
+    margin-left: 5px;
+}
+
+.info{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-    align-items: center;
+    justify-content: start;
 }
 
-.logitos{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin-right: 20px;
-    justify-content: end;
+.info label{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 300px;
 }
 
-.div-logitos{
-    display: flex;
-    justify-content: end;
+.info input[type="text"]{
+    border: none;
+    margin-left: 5px;
+    border-bottom: 1px solid rgba(101, 101, 104, 0.863);
+    background: transparent;
+    outline: none;
+    width: 220px;
+    height: 30px;
+    color: rgb(3, 3, 3);
+    font-size: 16px;
 }
 
-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-section .contenido{
-    font-size: 75px;
-}
-
-.table{
-    width: 100%;
-    height: 500px;
-    color: blueviolet;
-    overflow-y: auto;
-    overflow-x: auto;
-}
-
-table{
-    width: 100%;
-    font-size: 15px;
-    table-layout: fixed;
-    border-collapse: collapse;
-}
-
-table th{
-    padding: 20px 15px;
-    font-weight: 700;
-    border-right: solid 1px #f152cf;
-    border-left: solid 1px #f152cf;
-    border-top: solid 1px #f152cf;
-    border-bottom: solid 1px #f152cf;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.table td{
-    padding: 15px;
-    border-bottom: solid 1px #f152cf;
-    border-right: solid 1px #f152cf;
-    border-left: solid 1px #f152cf;
-    border-top: solid 1px #f152cf;
-    text-align: center;
-}
-
-.table td{
+.main-section input[type="submit"]{
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    background: #82bfdb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
     cursor: pointer;
-}
-
-.table td:hover{
-    background: rgb(216, 154, 213);
 }
 
 footer{
