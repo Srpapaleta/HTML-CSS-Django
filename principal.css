@@ -71,6 +71,7 @@ main{
 }
 
 .main-section{
+    background-color: rgb(226, 221, 221);
     width: 100%;
     height: 100%;
     display: grid;
@@ -112,7 +113,8 @@ section .contenido{
     width: 100%;
     height: 500px;
     color: blueviolet;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: auto;
 }
 
 table{
