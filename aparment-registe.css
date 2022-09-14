@@ -113,17 +113,18 @@ h2{
 
 .user-details input[type="text"]{
     border: none;
-    border-bottom: 1px solid rgba(101, 101, 104, 0.863);
+    border: 1px solid rgba(101, 101, 104, 0.863);
+    border-radius: 10px;
     background: transparent;
     outline: none;
-    width: 150px;
+    width: 60%;
     height: 30px;
     color: rgb(3, 3, 3);
     font-size: 16px;
 }
 
 .user-details :nth-child(3){
-    grid-column: 1/2;
+    grid-column: 2/3;
     grid-row: 1/2;
 }
 
