@@ -259,3 +259,9 @@ footer button{
     border-radius: 20px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 700px) {
+    body {
+        grid-template-rows: 100px 700px;
+    }
+}
