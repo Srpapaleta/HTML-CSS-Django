@@ -1,8 +1,11 @@
+from django.http import HttpRequest
 from django.shortcuts import render, redirect, HttpResponse
 
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+
+from webprojectapp.forms import ApartmentForm
 
 # Create your views here.
 
@@ -35,4 +38,24 @@ def logut_user(request):
 
 @login_required(login_url="login")
 def apr_register(request):
+
+    if request.method == 'POST':
+        print(request.POST)
+
     return render(request, "apt-register.html")
+class FormApartmentView(HttpRequest):
+
+    @login_required(login_url="login")
+    def register_form(request):
+
+        apartment = ApartmentForm()
+        
+        if request.method == 'POST':
+            apartment = ApartmentForm(request.POST)
+            
+            if apartment.is_valid():
+                #apartment.save()
+                messages.success(request, 'Se registró el apartamento correctamente.')
+                return redirect('homepage')
+        
+        return render(request, "apt-register.html", {"form": apartment})

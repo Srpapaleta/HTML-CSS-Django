@@ -29,21 +29,21 @@
                     </div>
                     <div>
                         <div class="contenido">10</div>
-                       <div>Disponibles</div>
+                        <div>Disponibles</div>
                     </div> 
                 </section>
                 <section>
                     <div class="div-logitos"><img class="logitos" src="https://casa-web.com.ar/wp-content/uploads/2018/11/logo-casa-web.jpg" alt=""></div>
                     <div>
                         <div class="contenido">5</div>
-                       <div>Ocupados</div>
+                        <div>Ocupados</div>
                     </div>                   
                 </section>
                 <section>
                     <div class="div-logitos"><img class="logitos" src="https://uploads-ssl.webflow.com/61ead284e7e32d2898787ace/62052fa306f7bd224e445364_3Fondos%20Home.png" alt=""></div>
                     <div>
                         <div class="contenido">30</div>
-                       <div>Clientes</div>
+                        <div>Clientes</div>
                     </div> 
                 </section>
             </div>
@@ -153,6 +153,15 @@
                     </tr>
                 </table>
             </div>
+        </div>
+        <div id="form_messages">
+            {% if messages %}
+                <ul>
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
         </div>
     </main>
     <footer><a href="/logout">Logout</a></footer>
