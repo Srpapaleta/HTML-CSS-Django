@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c86aa50-a37d-4478-95c1-f87344d694f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/principal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webproject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/static/css/apartment-register.css" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/static/css/apt-register.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/static/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/templates/apartment-register.html" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/templates/apt-register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/templates/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/templates/auth/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="1c86aa50-a37d-4478-95c1-f87344d694f0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
