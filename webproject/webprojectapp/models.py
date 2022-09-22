@@ -20,6 +20,11 @@ class Apartment(models.Model):
         ('NO', 'NO'),
     )
 
+    stateOptions = (
+        ('available', 'Disponible'),
+        ('unavailable', 'Ocupado'),
+    )
+
     id = models.BigAutoField(primary_key=True)
     matricula_inmueble = models.TextField(unique=True)
     ciudad = models.TextField()
@@ -35,3 +40,8 @@ class Apartment(models.Model):
         default = poolOptions[1]
     )
     precio_dia = models.TextField()
+    estado = models.CharField(
+        max_length = 20,
+        choices = stateOptions,
+        default = stateOptions[0]
+    )

@@ -36,13 +36,6 @@ def logut_user(request):
     logout(request)
     return redirect('login')
 
-@login_required(login_url="login")
-def apr_register(request):
-
-    if request.method == 'POST':
-        print(request.POST)
-
-    return render(request, "apt-register.html")
 class FormApartmentView(HttpRequest):
 
     @login_required(login_url="login")
@@ -54,7 +47,7 @@ class FormApartmentView(HttpRequest):
             apartment = ApartmentForm(request.POST)
             
             if apartment.is_valid():
-                #apartment.save()
+                apartment.save()
                 messages.success(request, 'Se registró el apartamento correctamente.')
                 return redirect('homepage')
         

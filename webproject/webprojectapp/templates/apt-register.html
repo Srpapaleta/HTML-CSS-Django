@@ -15,12 +15,15 @@
     </header>
     <main>
         <div class="box1">
-            <form action="/" class="form-container">
-                <label for="navegation-menu">Menú de Navegación</label>
-                <input type="submit" value="Opcion 1">
-                <input type="submit" value="Opcion 2">
-                <input type="submit" value="Opcion 3">
-            </form>
+            <div class="form-container">
+                <label class="navegation-menu">Menú de Navegación</label>
+                <div>
+                    <a href="{% url 'homepage' %}"><button class="submit">Inicio</button></a>
+                </div>
+                <div>
+                    <a href="{% url 'register_apartment' %}"><button class="submit">Registrar Apartamento</button></a>
+                </div>
+            </div>
         </div>
         <section class="main-section">
             <form action="{% url 'register_apartment' %}" method="post">
@@ -33,7 +36,7 @@
                             {{field.label_tag}}
                             {{field}}
                             {% for error in field.errors %}
-                                {{ error }}
+                                <span class="error-message">{{ error }}</span>
                             {% endfor %}
                         </div>
                     {% endfor %}
@@ -43,6 +46,6 @@
             </form>
         </section>
     </main>
-    <footer><a href="/logout">Log Out</a></footer>
+    <footer><a href="{% url 'logout' %}">Log Out</a></footer>
 </body>
 </html>
