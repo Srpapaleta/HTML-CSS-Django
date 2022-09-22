@@ -32,3 +32,10 @@ def login_user(request):
 def logut_user(request):
     logout(request)
     return redirect('login')
+
+@login_required(login_url="login")
+def apt_register(request):
+    if request.method == 'POST':
+        print("hola")
+        print(request.POST)
+    return render(request, 'apt-register.html')
