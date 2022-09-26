@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c86aa50-a37d-4478-95c1-f87344d694f0" name="Changes" comment="" />
+    <list default="true" id="1c86aa50-a37d-4478-95c1-f87344d694f0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webproject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webproject/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/static/css/apt-register.css" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/static/css/apt-register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/templates/apt-register.html" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/templates/apt-register.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +59,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Python_Cisco\ciclo3" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -72,6 +83,8 @@
       <workItem from="1663104722141" duration="4898000" />
       <workItem from="1663168676528" duration="5000" />
       <workItem from="1663868991206" duration="309000" />
+      <workItem from="1664134356699" duration="3000" />
+      <workItem from="1664232269900" duration="796000" />
     </task>
     <servers />
   </component>
