@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c86aa50-a37d-4478-95c1-f87344d694f0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webproject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webproject/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/static/css/apt-register.css" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/static/css/apt-register.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/templates/apt-register.html" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/templates/apt-register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +36,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2EVCqQ8qzU3VN5ardPAvxYHut5P" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
