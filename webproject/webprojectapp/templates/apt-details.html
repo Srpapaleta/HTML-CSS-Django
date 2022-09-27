@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles Apartamento</title>
+    <link rel="stylesheet" href="{% static 'css/apt-details.css' %}">
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <a href=""><img class="logo" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt=""></a>
+    </header>
+    <main>
+        <div class="box1">
+            <div class="form-container">
+                <label class="navegation-menu">Menú de Navegación</label>
+                <div>
+                    <a href="{% url 'homepage' %}"><button class="submit">Inicio</button></a>
+                </div>
+                <div>
+                    <a href="{% url 'register_apartment' %}"><button class="submit">Registrar Apartamento</button></a>
+                </div>
+            </div>
+        </div>
+        <section class="main-section">
+                <h2>Detalles del apartamento</h2>
+                <div class="user-details">
+                    <label for="direccion">Dirección:</label>
+                    <div>{{ apartment.direccion }}</div>
+
+                    <label>Ciudad:</label>
+                    <div>{{ apartment.ciudad }}</div>
+
+                    <label>Matrícula del inmueble:</label>
+                    <div>{{ apartment.matricula_inmueble }}</div>
+
+                    <label>Número de piso:</label>
+                    <div>{{ apartment.numero_piso }}</div>
+
+                    <label>Número de apartamento:</label>
+                    <div>{{ apartment.numero_apartamento }}</div>
+
+                    <label>Número de habitaciones:</label>
+                    <div>{{ apartment.numero_habitaciones}}</div>
+
+                    <label>Número de baños:</label>
+                    <div>{{ apartment.numero_banos }}</div>
+
+                    <label>Precio / día</label>
+                    <div>{{ apartment.precio_dia }}</div>
+                </div>
+        </section>
+    </main>
+    <footer><a href=""><button>Log Out</button></a></footer>
+</body>
+</html>

@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="1c86aa50-a37d-4478-95c1-f87344d694f0" name="Changes" comment="" />
+=======
+    <list default="true" id="1c86aa50-a37d-4478-95c1-f87344d694f0" name="Changes" comment="clone python-base">
+      <change afterPath="$PROJECT_DIR$/webproject/webprojectapp/static/css/apt-details.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webproject/webprojectapp/templates/apt-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webproject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/views.py" afterDir="false" />
+    </list>
+>>>>>>> 4740e2a7cf79f046abe4c7389f56ccf10e2bc765
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +22,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+<<<<<<< HEAD
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="Python Script" />
+=======
+        <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+>>>>>>> 4740e2a7cf79f046abe4c7389f56ccf10e2bc765
       </list>
     </option>
   </component>
@@ -34,13 +52,18 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2EVCqQ8qzU3VN5ardPAvxYHut5P" />
+<<<<<<< HEAD
   <component name="ProjectLevelVcsManager">
+=======
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+>>>>>>> 4740e2a7cf79f046abe4c7389f56ccf10e2bc765
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
@@ -53,6 +76,19 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
 }</component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Python_Cisco/ciclo3",
+    "list.type.of.created.stylesheet": "CSS",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
+  }
+}]]></component>
+>>>>>>> 4740e2a7cf79f046abe4c7389f56ccf10e2bc765
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Python_Cisco\ciclo3" />
@@ -80,6 +116,10 @@
       <workItem from="1664134356699" duration="3000" />
       <workItem from="1664232269900" duration="2773000" />
       <workItem from="1664296992271" duration="636000" />
+<<<<<<< HEAD
+=======
+      <workItem from="1664299987204" duration="10910000" />
+>>>>>>> 4740e2a7cf79f046abe4c7389f56ccf10e2bc765
     </task>
     <servers />
   </component>
