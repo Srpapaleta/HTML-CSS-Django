@@ -58,8 +58,3 @@ class FormApartmentView(HttpRequest):
                 return redirect('homepage')
         
         return render(request, "apt-register.html", {"form": apartment})
-
-@login_required(login_url="login")
-def detailsApartment(request, id):
-    apartment = Apartment.objects.get(pk=id)
-    return render(request, 'apt-details.html', {'apartment': apartment})

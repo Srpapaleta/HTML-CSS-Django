@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c86aa50-a37d-4478-95c1-f87344d694f0" name="Changes" comment="clone python-base">
-      <change afterPath="$PROJECT_DIR$/webproject/webprojectapp/static/css/apt-details.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webproject/webprojectapp/templates/apt-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webproject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="1c86aa50-a37d-4478-95c1-f87344d694f0" name="Changes" comment="apt-details" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,8 +79,16 @@
       <workItem from="1664134356699" duration="3000" />
       <workItem from="1664232269900" duration="2773000" />
       <workItem from="1664296992271" duration="636000" />
-      <workItem from="1664299987204" duration="10910000" />
+      <workItem from="1664299987204" duration="11278000" />
     </task>
+    <task id="LOCAL-00001" summary="apt-details">
+      <created>1664319507286</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664319507286</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,5 +104,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="apt-details" />
+    <option name="LAST_COMMIT_MESSAGE" value="apt-details" />
   </component>
 </project>
