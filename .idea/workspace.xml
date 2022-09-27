@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c86aa50-a37d-4478-95c1-f87344d694f0" name="Changes" comment="apt-details" />
+    <list default="true" id="1c86aa50-a37d-4478-95c1-f87344d694f0" name="Changes" comment="apt-details">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +81,7 @@
       <workItem from="1664134356699" duration="3000" />
       <workItem from="1664232269900" duration="2773000" />
       <workItem from="1664296992271" duration="636000" />
-      <workItem from="1664299987204" duration="11278000" />
+      <workItem from="1664299987204" duration="12119000" />
     </task>
     <task id="LOCAL-00001" summary="apt-details">
       <created>1664319507286</created>
