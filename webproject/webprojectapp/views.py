@@ -6,6 +6,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 
 from webprojectapp.forms import ApartmentForm
+from webprojectapp.models import Apartment
 
 # Create your views here.
 
@@ -14,7 +15,12 @@ def main(request):
 
 @login_required(login_url="login")
 def home(request):
-    return render(request, "home.html")
+    context = {
+        'appartments': Apartment.get_all(),
+        'availables': Apartment.get_all_availables(),
+        'unavailables': Apartment.get_all_unavailables(),
+    }
+    return render(request, "home.html", context)
 
 def login_user(request):
     

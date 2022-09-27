@@ -15,11 +15,6 @@ from django.db import models
 
 class Apartment(models.Model):
 
-    poolOptions = (
-        ('SI', 'SI'),
-        ('NO', 'NO'),
-    )
-
     stateOptions = (
         ('available', 'Disponible'),
         ('unavailable', 'Ocupado'),
@@ -34,14 +29,18 @@ class Apartment(models.Model):
     numero_apartamento = models.IntegerField()
     numero_habitaciones = models.IntegerField()
     numero_banos = models.IntegerField()
-    tiene_piscina = models.CharField(
-        max_length = 2,
-        choices = poolOptions,
-        default = poolOptions[1]
-    )
     precio_dia = models.TextField()
     estado = models.CharField(
         max_length = 20,
         choices = stateOptions,
-        default = stateOptions[0]
+        default = 'available'
     )
+
+    def get_all():
+        return Apartment.objects.all()
+
+    def get_all_availables():
+        return len(Apartment.objects.filter(estado = 'available'))
+
+    def get_all_unavailables():
+        return len(Apartment.objects.filter(estado = 'unavailable'))

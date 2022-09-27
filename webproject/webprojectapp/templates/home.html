@@ -31,23 +31,16 @@
                     <div class="div-logitos"><img class="logitos" src="https://casa-web.com.ar/wp-content/uploads/2018/11/logo-casa-web.jpg" alt="">
                     </div>
                     <div>
-                        <div class="contenido">10</div>
+                        <div class="contenido">{{ availables }}</div>
                         <div>Disponibles</div>
                     </div> 
                 </section>
                 <section>
                     <div class="div-logitos"><img class="logitos" src="https://casa-web.com.ar/wp-content/uploads/2018/11/logo-casa-web.jpg" alt=""></div>
                     <div>
-                        <div class="contenido">5</div>
+                        <div class="contenido">{{ unavailables }}</div>
                         <div>Ocupados</div>
                     </div>                   
-                </section>
-                <section>
-                    <div class="div-logitos"><img class="logitos" src="https://uploads-ssl.webflow.com/61ead284e7e32d2898787ace/62052fa306f7bd224e445364_3Fondos%20Home.png" alt=""></div>
-                    <div>
-                        <div class="contenido">30</div>
-                        <div>Clientes</div>
-                    </div> 
                 </section>
             </div>
             <div class="table">
@@ -58,102 +51,16 @@
                         <th>Estado</th>
                         <th>Acciones</th>
                     </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Calle 72 #21-48</td>
-                        <td>Disponible</td>
-                        <td>Arrendar</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Calle 72 #21-48</td>
-                        <td>Disponible</td>
-                        <td>Arrendar</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Calle 72 #21-48</td>
-                        <td>Disponible</td>
-                        <td>Arrendar</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Calle 72 #21-48</td>
-                        <td>Disponible</td>
-                        <td>Arrendar</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Calle 72 #21-48</td>
-                        <td>Disponible</td>
-                        <td>Arrendar</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Calle 72 #21-48</td>
-                        <td>Disponible</td>
-                        <td>Arrendar</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Calle 72 #21-48</td>
-                        <td>Disponible</td>
-                        <td>Arrendar</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Calle 72 #21-48</td>
-                        <td>Disponible</td>
-                        <td>Arrendar</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>Calle 72 #21-48</td>
-                        <td>Disponible</td>
-                        <td>Arrendar</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>Calle 72 #21-48</td>
-                        <td>Disponible</td>
-                        <td>Arrendar</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td>Calle 72 #21-48</td>
-                        <td>Disponible</td>
-                        <td>Arrendar</td>
-                    </tr>
-                    <tr>
-                        <td>12</td>
-                        <td>Calle 72 #21-48</td>
-                        <td>Disponible</td>
-                        <td>Arrendar</td>
-                    </tr>
-                    <tr>
-                        <td>13</td>
-                        <td>Calle 72 #21-48</td>
-                        <td>Disponible</td>
-                        <td>Arrendar</td>
-                    </tr>
-                    <tr>
-                        <td>14</td>
-                        <td>Calle 72 #21-48</td>
-                        <td>Disponible</td>
-                        <td>Arrendar</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td>Calle 72 #21-48</td>
-                        <td>Disponible</td>
-                        <td>Arrendar</td>
-                    </tr>
-                    <tr>
-                        <td>16</td>
-                        <td>Calle 72 #21-48</td>
-                        <td>Disponible</td>
-                        <td>Arrendar</td>
-                    </tr>
+                    {% if appartments %}
+                        {% for appartment in appartments %}
+                            <tr>
+                                <td>{{ appartment.matricula_inmueble }}</td>
+                                <td>{{ appartment.direccion }}</td>
+                                <td>{{ appartment.get_estado_display }}</td>
+                                <td>Visualizar</td>
+                            </tr>
+                        {% endfor %}
+                    {% endif %}
                 </table>
             </div>
         </div>
