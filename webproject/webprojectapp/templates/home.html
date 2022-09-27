@@ -57,7 +57,7 @@
                                 <td>{{ appartment.matricula_inmueble }}</td>
                                 <td>{{ appartment.direccion }}</td>
                                 <td>{{ appartment.get_estado_display }}</td>
-                                <td>Visualizar</td>
+                                <td><a href="{% url 'details' id=appartment.id %}">Visualizar</a></td>
                             </tr>
                         {% endfor %}
                     {% endif %}
