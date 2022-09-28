@@ -58,7 +58,7 @@
                                 <td class="td-matricula">{{ appartment.matricula_inmueble }}</td>
                                 <td class="td-direccion">{{ appartment.direccion }}</td>
                                 <td class="td-estado" apt-id="{{appartment.id}}" state-id="{{appartment.estado}}">{{ appartment.get_estado_display}}</td>
-                                <td class="td-visualizar"><a href="{% url 'details' id=appartment.id %}">Visualizar</a></td>
+                                <td class="td-visualizar" ><a href="{% url 'details' id=appartment.id %}">Visualizar</a></td>
                             </tr>
                         {% endfor %}
                     {% endif %}

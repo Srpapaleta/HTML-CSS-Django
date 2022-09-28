@@ -1,5 +1,5 @@
 body{
-    background: url('../img/fondo-blanco-gris-brillante-lineas-onduladas_1017-25101.jpeg') no-repeat center top;
+    background: url('../img/background.jpg') no-repeat center top;
     background-size: cover;
     display: grid;
     grid-template-rows: 100px 700px 100px;

@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dda1b3cb-5d8a-4b76-91a5-d57742582e68" name="Changes" comment="visualizar">
-      <change afterPath="$PROJECT_DIR$/webproject/webprojectapp/static/css/fondo-blanco-gris-brillante-lineas-onduladas_1017-25101.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fbfdf7b4-4de4-4e7b-ac8f-e4f59b3641a0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fbfdf7b4-4de4-4e7b-ac8f-e4f59b3641a0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webproject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/static/css/apt-details.css" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/static/css/apt-details.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/static/css/apt-register.css" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/static/css/apt-register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/static/css/auth/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/static/img/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/static/css/auth/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/static/css/auth/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/static/css/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/static/css/finca-raiz.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/static/css/fondo-blanco-gris-brillante-lineas-onduladas_1017-25101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/static/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/templates/apt-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/templates/apt-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webproject/webprojectapp/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/webproject/webprojectapp/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,19 +55,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Python_Cisco/ciclo3&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Python_Cisco/ciclo3/webproject/webprojectapp/static/img",
+    "list.type.of.created.stylesheet": "CSS",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Python_Cisco\ciclo3\webproject\webprojectapp\static\img" />
       <recent name="D:\Python_Cisco\ciclo3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
