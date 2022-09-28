@@ -1,5 +1,5 @@
 from django.http import HttpRequest
-from django.shortcuts import render, redirect, HttpResponse
+from django.shortcuts import render, redirect, HttpResponse, get_object_or_404
 
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
@@ -61,5 +61,5 @@ class FormApartmentView(HttpRequest):
 
 @login_required(login_url="login")
 def detailsApartment(request, id):
-    apartment = Apartment.objects.get(pk=id)
+    apartment = get_object_or_404(Apartment, pk=id)
     return render(request, 'apt-details.html', {'apartment': apartment})
