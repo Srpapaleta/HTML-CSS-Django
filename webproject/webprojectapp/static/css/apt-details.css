@@ -1,4 +1,6 @@
 body{
+    background: url(/fondo-blanco-gris-brillante-lineas-onduladas_1017-25101.jpg) no-repeat center top;
+    background-size: cover;
     display: grid;
     grid-template-rows: 100px 700px 100px;
     color: rgb(9, 99, 99);
@@ -173,4 +175,8 @@ footer button{
     font-size: 18px;
     border-radius: 20px;
     cursor: pointer;
+}
+
+.user-details div{
+    color: #2b2a2a;
 }
