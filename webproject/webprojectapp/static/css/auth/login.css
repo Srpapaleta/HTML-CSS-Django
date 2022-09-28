@@ -1,10 +1,10 @@
 body{
+    background: url(background.jpg) no-repeat center top;
+    background-size: cover;
     margin: 0;
     padding: 0;
-    background-size: cover;
     font-family: sans-serif;
     height: 100vh;
-    background-color: #F6F7F9;
 }
 
 .login-box{
@@ -17,7 +17,7 @@ body{
     box-sizing: border-box;
     padding: 70px 30px;
     border-radius: 65px;
-    background: #ffffff;
+    background: rgb(255, 255, 255);
 }
 
 .login-box .avatar{

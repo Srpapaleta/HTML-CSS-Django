@@ -34,14 +34,14 @@
                     <div>
                         <div class="contenido">{{ availables }}</div>
                         <div>Disponibles</div>
-                    </div> 
+                    </div>
                 </section>
                 <section>
                     <div class="div-logitos"><img class="logitos" src="https://casa-web.com.ar/wp-content/uploads/2018/11/logo-casa-web.jpg" alt=""></div>
                     <div>
                         <div class="contenido">{{ unavailables }}</div>
                         <div>Ocupados</div>
-                    </div>                   
+                    </div>
                 </section>
             </div>
             <div class="table">
@@ -75,10 +75,8 @@
             {% endif %}
         </div>
     </main>
+    <footer><a href="{% url 'logout' %}"><button>Log Out</button></a></footer>
 </body>
-<footer>
-    <a href="{% url 'logout' %}">Logout</a>
-</footer>
 
 <div class="modal-container" id="confirmation-modal-container">
 </div>

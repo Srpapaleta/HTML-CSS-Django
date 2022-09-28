@@ -1,7 +1,6 @@
 from django.urls import path
 from webprojectapp import views
 
-
 urlpatterns = [
     # Sections.
     path('', views.main),

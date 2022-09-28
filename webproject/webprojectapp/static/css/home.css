@@ -1,5 +1,6 @@
 body{
     background: url('../img/fondo-blanco-gris-brillante-lineas-onduladas_1017-25101.jpeg') no-repeat center top;
+    background-size: cover;
     display: grid;
     grid-template-rows: 100px 700px 100px;
     color: rgb(9, 99, 99);
@@ -89,7 +90,7 @@ main{
     width: 100%;
     height: 100%;
     display: grid;
-    background-color: rgb(226, 221, 221);
+    background-color: rgba(255, 255, 255, 0.83);
     border-radius: 10px;
     align-content: center;
     justify-items: center;
@@ -102,7 +103,7 @@ main{
 /* Navegation styles ends */
 
 .main-section{
-    background-color: rgb(226, 221, 221);
+    background-color: rgba(255, 255, 255, 0.83);
     width: 100%;
     height: 100%;
     display: grid;
@@ -149,6 +150,7 @@ section .contenido{
 }
 
 table{
+    background-color: rgba(255, 255, 255, 0.6);
     width: 100%;
     font-size: 15px;
     table-layout: fixed;
@@ -156,6 +158,7 @@ table{
 }
 
 table th{
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 20px 15px;
     font-weight: 700;
     border-right: solid 1px #f152cf;
@@ -188,6 +191,19 @@ footer{
     color: #fff;
     display: grid;
     justify-content: end;
+}
+
+footer button{
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 40px;
+    position: relative;
+    left: 12px;
+    background: #82bfdb;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 /****** MODAL *******/
