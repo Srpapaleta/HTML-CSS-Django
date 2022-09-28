@@ -1,5 +1,5 @@
-from django.http import HttpRequest
-from django.shortcuts import render, redirect, HttpResponse
+from django.http import HttpRequest, JsonResponse
+from django.shortcuts import render, redirect
 
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
@@ -12,15 +12,6 @@ from webprojectapp.models import Apartment
 
 def main(request):
     return redirect('homepage')
-
-@login_required(login_url="login")
-def home(request):
-    context = {
-        'appartments': Apartment.get_all(),
-        'availables': Apartment.get_all_availables(),
-        'unavailables': Apartment.get_all_unavailables(),
-    }
-    return render(request, "home.html", context)
 
 def login_user(request):
     
@@ -38,9 +29,23 @@ def login_user(request):
     return render(request, "auth/login.html")
 
 @login_required(login_url="login")
+def home(request):
+    context = {
+        'appartments': Apartment.get_all(),
+        'availables': Apartment.get_all_availables(),
+        'unavailables': Apartment.get_all_unavailables(),
+    }
+    return render(request, "home.html", context)
+
+@login_required(login_url="login")
 def logut_user(request):
     logout(request)
     return redirect('login')
+
+@login_required(login_url="login")
+def detailsApartment(request, id):
+    apartment = Apartment.objects.get(pk=id)
+    return render(request, 'apt-details.html', {'apartment': apartment})
 
 class FormApartmentView(HttpRequest):
 
@@ -59,7 +64,33 @@ class FormApartmentView(HttpRequest):
         
         return render(request, "apt-register.html", {"form": apartment})
 
-@login_required(login_url="login")
-def detailsApartment(request, id):
-    apartment = Apartment.objects.get(pk=id)
-    return render(request, 'apt-details.html', {'apartment': apartment})
+class ApartamentActions(HttpRequest):
+
+    @login_required(login_url="login")
+    def updateApartamentState(request, id, state):
+        # Validations.
+        if state not in ['available', 'unavailable']:
+            return JsonResponse({
+                "status" : 0,
+                "message": "Bad request",
+            })
+
+        apartament = Apartment.get_by_id(id)
+        if apartament == False:
+            return JsonResponse({
+                "status" : 0,
+                "message": "Apartament was not found",
+            })
+
+        # Update state.
+        if Apartment.update_state(apartament, state):
+            return JsonResponse({
+                "status" : 1,
+                "message": "Apartament updated successfully",
+            })
+        else:
+            return JsonResponse({
+                "status" : 0,
+                "message": "Internal Error!",
+            })
+

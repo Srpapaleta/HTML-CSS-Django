@@ -44,3 +44,13 @@ class Apartment(models.Model):
 
     def get_all_unavailables():
         return len(Apartment.objects.filter(estado = 'unavailable'))
+
+    def get_by_id(apartament_id):
+        apartament = Apartment.objects.filter(id = apartament_id)
+        if apartament:
+            return apartament
+        
+        return False
+
+    def update_state(apartament, state):       
+        return apartament.update(estado = state)

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -54,10 +55,10 @@
                     {% if appartments %}
                         {% for appartment in appartments %}
                             <tr>
-                                <td>{{ appartment.matricula_inmueble }}</td>
-                                <td>{{ appartment.direccion }}</td>
-                                <td>{{ appartment.get_estado_display }}</td>
-                                <td><a href="{% url 'details' id=appartment.id %}">Visualizar</a></td>
+                                <td class="td-matricula">{{ appartment.matricula_inmueble }}</td>
+                                <td class="td-direccion">{{ appartment.direccion }}</td>
+                                <td class="td-estado" apt-id="{{appartment.id}}" state-id="{{appartment.estado}}">{{ appartment.get_estado_display}}</td>
+                                <td class="td-visualizar"><a href="{% url 'details' id=appartment.id %}">Visualizar</a></td>
                             </tr>
                         {% endfor %}
                     {% endif %}
@@ -74,6 +75,25 @@
             {% endif %}
         </div>
     </main>
-    <footer><a href="{% url 'logout' %}">Logout</a></footer>
 </body>
+<footer>
+    <a href="{% url 'logout' %}">Logout</a>
+</footer>
+
+<div class="modal-container" id="confirmation-modal-container">
+</div>
+<div class="modal-change-status" id="confirmation-modal">
+    <div class="modal-header">
+        <!-- <a href="#" class="cancel-modal">X</a> -->
+    </div>
+    <div class="modal-content">
+        <div class="modal-message">¿Está seguro que desea cambiar el estado a <b id="change-state"></b> ?</div>
+    </div>
+    <div class="modal-footer">
+        <button class="confirm-state-change" id="confirm-state-change" apt-id="" apt-state="">Confirmar</button>
+        <button class="cancel-modal" id="cancel-modal">Cancelar</button>
+    </div>
+</div>
+
+<script src="{% static 'js/home.js' %}" crossorigin="anonymous"></script>
 </html>

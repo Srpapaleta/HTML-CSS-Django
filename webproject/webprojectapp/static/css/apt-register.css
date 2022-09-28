@@ -1,4 +1,5 @@
 body{
+    background: url('../img/fondo-blanco-gris-brillante-lineas-onduladas_1017-25101.jpeg') no-repeat center top;
     display: grid;
     grid-template-rows: 100px 700px 100px;
     color: rgb(9, 99, 99);

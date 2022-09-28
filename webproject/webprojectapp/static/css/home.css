@@ -1,4 +1,5 @@
 body{
+    background: url('../img/fondo-blanco-gris-brillante-lineas-onduladas_1017-25101.jpeg') no-repeat center top;
     display: grid;
     grid-template-rows: 100px 700px 100px;
     color: rgb(9, 99, 99);
@@ -16,7 +17,7 @@ header{
     align-items: end;
 }
 
-a{
+a {
     width: 100px;
 }
 
@@ -187,4 +188,154 @@ footer{
     color: #fff;
     display: grid;
     justify-content: end;
+}
+
+/****** MODAL *******/
+
+.modal-container {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    opacity: 0.9;
+    background: #222;
+    z-index: 40000;
+    top:0;
+    left: 0;
+    overflow: hidden;
+
+    animation-name: fadeIn_Container;
+    animation-duration: 1s;
+}
+
+.modal-change-status {
+    display:none;
+    top: 0;
+    min-width: 250px;
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 40001;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+    margin-top: 30px;
+    margin-left: 10%;
+
+    animation-name: fadeIn_Modal;
+    animation-duration: 0.8s;
+}
+
+.modal-change-status .modal-header {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 2px solid #ccc;
+}
+
+.modal-header a {
+    width: auto;
+    text-decoration: none;
+    float: right;
+    line-height: 40px;
+    margin-right: 20px;
+    color: #aaa;
+}
+
+.modal-content {
+    width: 100%;
+    height: 250px;
+}
+
+.modal-message {
+    text-align: center;
+    padding-top: 10%;
+    font-size: 28px;
+}
+
+.modal-footer {
+    width: 100%;
+    height: 80px;
+    border-radius: 0px 0px 10px 10px;
+    border-top: 2px solid #ccc;
+}
+
+.modal-footer button {
+    float: right;
+    margin-right: 10px;
+    margin-top: 18px;
+    text-decoration: none; 
+    height: 40px;
+    background: #82bfdb;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#cancel-modal {
+    background: none;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 600px) {
+
+    .modal-change-status {
+        width: 500px;
+        height: 300px;
+        margin-left: calc(50vw - 250px);
+        margin-top: calc(50vh - 150px);
+    }
+
+    .modal-header {
+        width: 100%;
+        height: 40px;
+    }
+
+    .modal-header a {
+        width: auto;
+        line-height: 40px;
+        margin-right: 10px;
+    }
+
+    .modal-content {
+        width: 100%;
+        height: 190px;
+    }
+
+    .modal-footer {
+        width: 100%;
+        height: 70px;   
+    }
+
+    .modal-footer button {
+        float: right;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+}
+
+/*LARGE SCREEN*/
+@media screen and (min-width: 1300px){
+
+}
+
+/*ANIMATIONS*/
+@keyframes fadeIn_Modal {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn_Container {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.9;
+    }
 }
