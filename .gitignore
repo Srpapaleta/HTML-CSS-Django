@@ -105,3 +105,4 @@ dist
 
 
 webproject/db.sqlite3
+webproject/webproject/settings.py
