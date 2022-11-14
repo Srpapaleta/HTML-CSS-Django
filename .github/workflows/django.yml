@@ -1,0 +1,14 @@
+name: test
+
+on:
+  push:
+    branches:
+    - python-base-2
+    
+jobs:
+  prueba:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: echo messaje
+        run: echo "hola joven"
+        
