@@ -3,7 +3,7 @@ name: test
 on:
   push:
     branches:
-    - python-base-2
+    - python-base-3
     
 jobs:
   prueba:
