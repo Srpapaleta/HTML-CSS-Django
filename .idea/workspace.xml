@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dda1b3cb-5d8a-4b76-91a5-d57742582e68" name="Changes" comment="apt-details">
-      <change afterPath="$PROJECT_DIR$/.github/workflow/test1.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflow/test1.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/test1.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

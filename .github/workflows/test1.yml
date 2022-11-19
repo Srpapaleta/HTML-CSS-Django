@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - python-base-3
-  jobs:
-    hello_world:
-      runs-on: ubuntu-18.04
-      steps:
-        - name: Echo the message
-          run: echo "Hola Joven"
+jobs:
+  hello_world:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Echo the message
+        run: echo "Hola Joven"
